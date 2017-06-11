@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+  android:orientation="vertical"
+    tools:context="com.example.michael.myapplicationnew.Home"
+    android:background="@color/cast_libraries_material_featurehighlight_outer_highlight_default_color">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <ImageView
+        android:layout_width="98px"
+        android:layout_height="100px"
+        app:srcCompat="@drawable/aaua_log"
+        android:id="@+id/imageView3"
+        android:layout_marginBottom="38dp"
+        android:layout_marginEnd="11dp"
+        android:layout_above="@+id/editText_username"
+        android:layout_alignEnd="@+id/username"
+        android:baseline="@dimen/cast_intro_overlay_focus_radius" />
+    <TextView
+        android:text="MY DROID "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/droid_text"
+        android:textStyle="normal|bold"
+        android:textColor="@color/cast_expanded_controller_progress_text_color"
+        android:textSize="47sp"
+        android:fontFamily="cursive" /></LinearLayout>
+    <TextView
+        android:text="Username:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/username"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/editText_username"
+
+        android:fontFamily="monospace"
+        android:textSize="17sp"
+        android:textStyle="normal|bold"
+        android:textColor="@color/cast_expanded_controller_text_color" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText_username"
+        android:layout_alignBottom="@+id/username"
+
+        android:textColor="?attr/colorPrimary"
+
+        android:typeface="normal"
+        style="@style/Widget.AppCompat.Light.AutoCompleteTextView" />
+
+    <TextView
+        android:text="Password:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+
+
+        android:id="@+id/password"
+        android:textColor="@color/cast_expanded_controller_text_color"
+        android:textStyle="normal|bold"
+        android:backgroundTint="@android:color/background_light" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+
+
+        android:id="@+id/editText_password"
+
+        android:textColor="?attr/colorPrimary"
+        android:elevation="3dp"
+        style="@style/Widget.AppCompat.Light.AutoCompleteTextView" />
+
+
+    <Button
+        android:text="Forget Password ?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_below="@+id/editText_password"
+        android:gravity="center_horizontal|center"
+        android:layout_marginTop="20dp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:fontFamily="monospace"
+        android:textSize="14sp"
+        android:typeface="normal"
+        android:lineSpacingExtra="8sp"
+        android:textStyle="normal|bold|italic" />
+
+    <Button
+        android:text="LOGIN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/button_login"
+        style="@android:style/Widget.Button"
+
+        android:background="@android:drawable/btn_default_small"
+        android:textStyle="normal|bold"
+        android:textColor="?attr/colorPrimary"
+
+        android:elevation="10dp"
+        android:layout_marginTop="5dp" />
+
+
+    <TextView
+        android:text="Register Here !"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_register"
+        android:id="@+id/text_register_here"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/cast_expanded_controller_text_color"
+        android:textStyle="normal|bold"
+        android:backgroundTint="@android:color/background_light"
+        android:textAlignment="center"
+        android:clickable="true" />
+
+</LinearLayout>
